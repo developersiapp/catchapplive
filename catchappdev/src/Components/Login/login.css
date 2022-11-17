@@ -1,0 +1,656 @@
+body {
+  background: #efefef;
+  overflow-x: hidden;
+  color: #4e4e4e;
+  font-family: "Circular Std" !important;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../../Assets/fonts/CircularStd-Bold.woff2") format("woff2"),
+    url("../../Assets/fonts/CircularStd-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../../Assets/fonts/CircularStd-Medium.woff2") format("woff2"),
+    url("../../Assets/fonts/CircularStd-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../../Assets/fonts/CircularStd-MediumItalic.woff2") format("woff2"),
+    url("../../Assets/fonts/CircularStd-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("../../Assets/fonts/CircularStd-BookItalic.woff2") format("woff2"),
+    url("../../Assets/fonts/CircularStd-BookItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../../Assets/fonts/CircularStd-BoldItalic.woff2") format("woff2"),
+    url("../../Assets/fonts/CircularStd-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../../Assets/fonts/CircularStd-Black.woff2") format("woff2"),
+    url("../../Assets/fonts/CircularStd-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../../Assets/fonts/CircularStd-Medium.woff2") format("woff2"),
+    url("../../Assets/fonts/CircularStd-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("../../Assets/fonts/CircularStd-Book.woff2") format("woff2"),
+    url("../../Assets/fonts/CircularStd-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../../Assets/fonts/CircularStd-Bold.woff2") format("woff2"),
+    url("../../Assets/fonts/CircularStd-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../../Assets/fonts/CircularStd-BlackItalic.woff2") format("woff2"),
+    url("../../Assets/fonts/CircularStd-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/*------------HOME CSS-----------------*/
+
+.container-fluid.menu {
+  background: #fb556b;
+  box-shadow: 0 0 3px #000;
+}
+.container-fluid.menu .nav-link,
+.navbar-light .navbar-brand {
+  color: #fff;
+  margin-right: 0px !important;
+}
+img.logo {
+  max-width: 50px;
+}
+a.nav-link .fa {
+  font-size: 22px;
+  line-height: 32px;
+}
+a.nav-link.settings .fa {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+a.nav-link.settings .fa,
+a.nav-link.map .fa {
+  position: relative;
+  top: 3px;
+}
+.has-search .form-control {
+  padding-left: 3.375rem;
+}
+.has-search .form-control::placeholder {
+  color: #a09fa0;
+  font-size: 18px;
+}
+.form-group.has-search {
+  margin-bottom: 0;
+}
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 3.375rem;
+  height: 3.375rem;
+  line-height: 3.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+.bg-search {
+  background: #fff;
+  border-radius: 5px;
+  padding: 35px;
+  margin-top: 35px;
+}
+.bg-search .form-control {
+  background: #efefef;
+  border: navajowhite;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+.bg-search .fa-search:before {
+  content: "\f002";
+  font-size: 18px;
+}
+section.lounge-recent-search {
+  margin-top: 37px;
+}
+.lounge-box img {
+  max-width: 100%;
+}
+.display-block.lounge-box {
+  background: #fff;
+  padding-bottom: 40px;
+  margin-top: 2px;
+}
+.like-lounge-box,
+.search-lounge-box {
+  padding: 25px 40px;
+}
+span.name-lounge {
+  font-size: 20px;
+  font-weight: 500;
+}
+span.like-lounge {
+  font-size: 18px;
+}
+span.like-lounge a {
+  color: #6d6d6d;
+}
+.display-block.recent-search-box {
+  background: #fff;
+  padding-bottom: 25px;
+}
+span.recent-clubs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+}
+span.recent-clubs img {
+  max-width: 100%;
+}
+span.name-recent-club {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  color: #fff;
+  text-align: center;
+}
+.clubs {
+  padding: 12px;
+}
+.display-block.recent-search-box {
+  background: #fff;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+span.name-recent-club {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  color: #fff;
+  text-align: center;
+  bottom: 14px;
+  font-size: 18px;
+}
+.add-club-btn button {
+  background: #fb556b;
+  border-color: #fb556b;
+  width: 100%;
+  color: #fff;
+  height: 53px;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.add-club-btn button:hover {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  background: #ff2a46;
+}
+.add-club-btn img {
+  max-width: 22px;
+  top: -3px;
+  position: relative;
+  margin-right: 7px;
+}
+.col-12.col-lg-12.col-sm-12.search-lounge-box {
+  padding-left: 10px;
+}
+.copyright {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #a19c9c;
+
+  font-size: 13px;
+}
+#addclub .modal-dialog {
+  margin-top: 175px;
+}
+.modal-footer.modal-button button {
+  margin: 0;
+  font-size: 18px;
+  height: 48px;
+}
+.add-club-btn {
+  width: 192px;
+}
+.modal-footer.modal-button {
+  justify-content: center;
+  border: none;
+}
+.type-something textarea {
+  background: #f0f0f0;
+  border: none;
+  height: 130px;
+  border-radius: 10px;
+  resize: none;
+  padding-top: 18px;
+  padding-left: 15px;
+}
+.type-something textarea::placeholder {
+  font-weight: normal;
+  font-size: 13px;
+}
+.modal-header {
+  border: none;
+  padding-bottom: 0;
+}
+#addclub .modal-content {
+  border-radius: 20px;
+  padding: 15px 35px;
+}
+#addclub h5.modal-title {
+  width: 100%;
+  font-size: 26px;
+}
+button.close.text-right img {
+  max-width: 16px;
+  right: -7px;
+  position: relative;
+}
+.close {
+  opacity: 1;
+}
+/*-----------------------------*/
+
+/*------------Login CSS-----------------*/
+
+section.login-left-box {
+  height: 100vh;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.login-box-inner {
+  width: 400px;
+}
+.login-box-inner.signup-inner {
+  width: 600px;
+}
+/* The container */
+.container-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 0px;
+  margin-top: 16px;
+  cursor: pointer;
+  line-height: 17px;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: #eee;
+  border-radius: 5px;
+  border: 2px solid #979797;
+  background: #fff;
+}
+
+/* On mouse-over, add a grey background color */
+.container-checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked ~ .checkmark {
+  background-color: #fb556b;
+  border: 2px solid #fb556b;
+  border-radius: 5px;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+  left: 6px;
+  top: 1px;
+  width: 6px;
+  height: 13px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.display-block.logo-box img {
+  max-width: 70px;
+}
+span.input-border {
+  border: 2px solid #c7cbcd;
+  height: 48px;
+  width: 100%;
+  float: left;
+  border-radius: 7px;
+}
+span.input-border input {
+  border: none;
+  width: 94%;
+  line-height: 32px;
+  padding-left: 12px;
+}
+span.catch {
+  font-size: 40px;
+  font-weight: bold;
+  color: #424242;
+  margin-left: 18px;
+  top: 16px;
+  position: relative;
+}
+span.input-border input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #929699;
+  font-size: 14px;
+}
+span.input-border {
+  border: 2px solid #c7cbcd;
+  height: 52px;
+  width: 100%;
+  float: left;
+  border-radius: 7px;
+  padding: 7px 15px;
+  margin-bottom: 23px;
+}
+span.input-border .fa {
+  color: #828282;
+  font-size: 18px;
+}
+span.input-border img {
+  max-width: 13px;
+}
+.register-txt a {
+  color: #fc566b;
+  font-size: 16px;
+}
+.forgot-txt a {
+  color: #929699;
+  font-size: 16px;
+}
+span.rm-text {
+  font-size: 16px;
+  position: relative;
+  top: 3px;
+}
+button.btn.login-btn {
+  width: auto;
+  padding: 0 20px;
+  background: linear-gradient(45deg, #fd4a69, #f39b7b);
+  color: #fff;
+  height: 52px;
+  border-radius: 8px;
+}
+.or {
+  position: relative;
+  margin: 25px 0;
+}
+.or span {
+  background: #fff;
+  display: inline-block;
+  z-index: 43;
+  position: relative;
+  width: 70px;
+}
+.display-block.text-center.or::after {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #e7e7e7;
+  content: "";
+  left: 0;
+  top: 13px;
+}
+.remembr-box,
+.login-btn-box {
+  margin: 10px 0 30px 0;
+}
+button.btn.btn-fb {
+  width: 100%;
+  background: #3b5998;
+  color: #fff;
+  border-radius: 7px;
+}
+button.btn.btn-fb img {
+  max-width: 12px;
+  margin-right: 11px;
+}
+button.btn.btn-fb {
+  height: 55px;
+}
+button.btn.btn-fb {
+  height: 53px;
+  margin-top: 5px;
+}
+section.login-right-box {
+  background: linear-gradient(45deg, #f39a7b, #fd4c69);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+section.login-right-box img {
+  max-width: 100%;
+}
+/*-----------------------------*/
+
+/*------------Profile CSS----------*/
+
+section.profile-page {
+  background: #fff;
+  margin: 35px 0 70px 0;
+  padding: 30px 0;
+}
+span.edit-bg {
+  background: #fb556b;
+  color: #fff;
+  width: 52px;
+  height: 52px;
+  justify-content: center;
+  display: inline-block;
+  line-height: 55px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+}
+span.edit-bg .fa {
+  font-size: 23px;
+}
+.img-box img {
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 3px #000;
+  width: 100%;
+}
+span.edit-bg img {
+  width: 23px;
+}
+section.profile-page label {
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+section.profile-page input.form-control {
+  border: 2px solid #e4e4e4;
+  height: 53px;
+  border-radius: 10px;
+}
+/* The container */
+.container-radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 48px;
+  float: left;
+}
+
+/* Hide the browser's default radio button */
+.container-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 26px;
+  width: 26px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 3px solid #979797;
+}
+
+/* On mouse-over, add a grey background color */
+.container-radio:hover input ~ .checkmark-radio {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container-radio input:checked ~ .checkmark-radio {
+  background-color: #2196f3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark-radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container-radio input:checked ~ .checkmark-radio:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container-radio .checkmark-radio:after {
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fb556b;
+}
+.container-radio input:checked ~ .checkmark-radio {
+  background-color: #fff;
+  border: 3px solid #fb556b;
+}
+label.container-radio.female {
+  margin-left: 50px;
+}
+.form-group.col-md-6.update-group {
+  margin-bottom: 30px;
+}
+.save-btn-box button {
+  background: #fb556b !important;
+  height: 47px !important;
+  width: 200px !important;
+}
+
+.no-display {
+  display: none !important;
+}
+span.fieldError {
+  margin-bottom: 15px;
+  float: left;
+  margin-top: -20px;
+  font-size: 12px;
+  width: 100%;
+  color: #c11a1a;
+}
+.btn-fb.metro .fa {
+  margin-right: 10px;
+}
+.login-box-inner.signup-inner span.input-border input {
+  width: 92%;
+}
+.sign-up-radio .container-radio {
+  margin-top: 0;
+}
+
+/*--------------------------------*/

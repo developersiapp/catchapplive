@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f90bdb47.chunk.css",
+    "main.js": "/static/js/main.ed337068.chunk.js",
+    "main.js.map": "/static/js/main.ed337068.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.aaf88d20.js",
+    "runtime-main.js.map": "/static/js/runtime-main.aaf88d20.js.map",
+    "static/css/2.24b8c675.chunk.css": "/static/css/2.24b8c675.chunk.css",
+    "static/js/2.6c9da347.chunk.js": "/static/js/2.6c9da347.chunk.js",
+    "static/js/2.6c9da347.chunk.js.map": "/static/js/2.6c9da347.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.96e326ac5e730374c239bc0f1e2c53cf.js": "/precache-manifest.96e326ac5e730374c239bc0f1e2c53cf.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.24b8c675.chunk.css.map": "/static/css/2.24b8c675.chunk.css.map",
+    "static/css/main.f90bdb47.chunk.css.map": "/static/css/main.f90bdb47.chunk.css.map",
+    "static/js/2.6c9da347.chunk.js.LICENSE.txt": "/static/js/2.6c9da347.chunk.js.LICENSE.txt",
+    "static/media/common.css": "/static/media/Ananda.94931b27.woff",
+    "static/media/login.css": "/static/media/CircularStd-MediumItalic.eddb7021.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aaf88d20.js",
+    "static/css/2.24b8c675.chunk.css",
+    "static/js/2.6c9da347.chunk.js",
+    "static/css/main.f90bdb47.chunk.css",
+    "static/js/main.ed337068.chunk.js"
+  ]
+}

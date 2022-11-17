@@ -1,0 +1,183 @@
+@import "~loaders.css/src/animations/line-scale.scss";
+
+.main-profile-picture {
+  left: 15px;
+  top: 0px;
+  height: auto;
+  width: 155px;
+  display: inline-block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: top;
+  position: absolute;
+  z-index: 1;
+}
+.dropzone-holder {
+  border: 1px solid #dddddd;
+  min-height: inherit;
+  background: inherit;
+  padding: inherit;
+  width: inherit;
+  position: inherit;
+  background: inherit;
+  background-size: inherit;
+  cursor: inherit;
+  box-sizing: inherit;
+  bottom: inherit;
+  z-index: 9;
+  color: blue;
+  font-size: 16px !important;
+  line-height: 31px !important;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  width: 155px;
+  height: auto;
+  &:hover .camera-in-preview {
+    display: none;
+  }
+  .dropzone {
+    padding: 0px;
+    border: none;
+    min-height: inherit;
+    & > div {
+      display: none !important;
+    }
+    & > div:last-child {
+      display: block !important;
+    }
+  }
+  .no-dz-image {
+    display: none;
+  }
+  .dz-error {
+    display: none !important;
+  }
+  .dz-preview {
+    position: initial;
+    display: table;
+    width: 100%;
+    margin: 0px;
+  }
+  .dz-message {
+    display: none;
+  }
+  .dz-preview {
+    .dz-image {
+      width: 155px;
+      height: 155px;
+      display: table-cell;
+      background: #eeeeee;
+      border-radius: 5px;
+      vertical-align: middle;
+      overflow: hidden;
+      text-align: center;
+      img {
+        display: block;
+        vertical-align: middle;
+        height: auto;
+        width: 100%;
+      }
+    }
+    .dz-details {
+      z-index: 20;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      font-size: 13px;
+      min-width: 100%;
+      max-width: 100%;
+      padding: 1em 1em;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.9);
+      line-height: 150%;
+    }
+    .dz-remove {
+      line-height: 30px;
+      background: #fff;
+      position: absolute !important;
+      right: 10px;
+      top: 10px;
+      z-index: 50;
+      border-radius: 50px;
+      width: 30px;
+      height: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      text-indent: 100px;
+      overflow: hidden;
+      font-size: 27px;
+      position: relative;
+      border: none;
+    }
+    .dz-remove:after {
+      content: "";
+      font-size: 27px !important;
+      position: absolute;
+      right: 9px;
+      top: 9px;
+      font-size: 27px;
+      width: 11px;
+      height: 11px;
+      background: url(/../images/close.png) no-repeat center;
+    }
+  }
+  .camra-icon {
+    right: 10px;
+    bottom: 10px;
+    position: absolute;
+    z-index: 10;
+    background: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    box-shadow: (0, 2px, 1px, 0, #ddd);
+    text-align: center;
+    line-height: 29px;
+    svg {
+      position: absolute;
+      right: 7px;
+      top: 7px;
+      z-index: 2;
+      color: #047ec3;
+    }
+  }
+  .dz-default,
+  .dz-message {
+    display: none !important;
+  }
+}
+.form {
+  margin: 0 auto;
+  padding: 100px 30px 0;
+
+  @media (min-width: 800px) {
+    max-width: 60%;
+  }
+}
+
+.input-range {
+  margin-bottom: 160px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  display: block;
+}
